@@ -1,0 +1,586 @@
+    private void initComponents() {
+
+        jScrollBar1 = new javax.swing.JScrollBar();
+        title_label = new javax.swing.JLabel();
+        checkboxes_panel = new javax.swing.JPanel();
+        whois_checkbox = new javax.swing.JCheckBox();
+        dns_checkbox = new javax.swing.JCheckBox();
+        ip_port_checkbox = new javax.swing.JCheckBox();
+        os_checkbox = new javax.swing.JCheckBox();
+        http_methods_checkbox = new javax.swing.JCheckBox();
+        structure_checkbox = new javax.swing.JCheckBox();
+        traceroute_checkbox = new javax.swing.JCheckBox();
+        same_server_domain_checkbox = new javax.swing.JCheckBox();
+        absolute_path_checkbox = new javax.swing.JCheckBox();
+        bing_key_textfield = new javax.swing.JTextField();
+        config_file_label = new javax.swing.JLabel();
+        config_file_textfield = new javax.swing.JTextField();
+        browse_save_file = new javax.swing.JButton();
+        webcms_panel = new javax.swing.JPanel();
+        webcms_checkbox = new javax.swing.JCheckBox();
+        webcms_label = new javax.swing.JLabel();
+        webcms_finger_position_textfield = new javax.swing.JTextField();
+        webcms_browse_button = new javax.swing.JButton();
+        target_label = new javax.swing.JLabel();
+        target_textfield = new javax.swing.JTextField();
+        sensitive_file_panel = new javax.swing.JPanel();
+        sensitive_file_checkbox = new javax.swing.JCheckBox();
+        bake_file_label = new javax.swing.JLabel();
+        bake_file_textfield = new javax.swing.JTextField();
+        bake_file_browse_button = new javax.swing.JButton();
+        login_dicts_label = new javax.swing.JLabel();
+        login_textfield = new javax.swing.JTextField();
+        login_browse_button = new javax.swing.JButton();
+        upload_label = new javax.swing.JLabel();
+        upload_textfield = new javax.swing.JTextField();
+        upload_browse_button = new javax.swing.JButton();
+        common_label = new javax.swing.JLabel();
+        common_textfield = new javax.swing.JTextField();
+        common_browse_button = new javax.swing.JButton();
+        git_svn_label = new javax.swing.JLabel();
+        git_svn_textfield = new javax.swing.JTextField();
+        git_svn_button = new javax.swing.JButton();
+        sub_domain_panel = new javax.swing.JPanel();
+        sub_domain_checkbox = new javax.swing.JCheckBox();
+        sub_domain_label = new javax.swing.JLabel();
+        sub_domain_textfield = new javax.swing.JTextField();
+        sub_domain_browse_button = new javax.swing.JButton();
+        confirm_button = new javax.swing.JButton();
+        result_file_textfield = new javax.swing.JTextField();
+        result_save_browse_button = new javax.swing.JButton();
+        result_save_label = new javax.swing.JLabel();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        title_label.setFont(new java.awt.Font("Consolas", 0, 18)); // NOI18N
+        title_label.setText("HawkEye Config Panel");
+
+        checkboxes_panel.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
+
+        whois_checkbox.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        whois_checkbox.setText("Whois");
+        whois_checkbox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                whois_checkboxActionPerformed(evt);
+            }
+        });
+
+        dns_checkbox.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        dns_checkbox.setText("DNS");
+        dns_checkbox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                dns_checkboxActionPerformed(evt);
+            }
+        });
+
+        ip_port_checkbox.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        ip_port_checkbox.setText("IP & Ports");
+        ip_port_checkbox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ip_port_checkboxActionPerformed(evt);
+            }
+        });
+
+        os_checkbox.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        os_checkbox.setText("OS");
+        os_checkbox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                os_checkboxActionPerformed(evt);
+            }
+        });
+
+        http_methods_checkbox.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        http_methods_checkbox.setText("HTTP Methods");
+        http_methods_checkbox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                http_methods_checkboxActionPerformed(evt);
+            }
+        });
+
+        structure_checkbox.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        structure_checkbox.setText("Structure");
+        structure_checkbox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                structure_checkboxActionPerformed(evt);
+            }
+        });
+
+        traceroute_checkbox.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        traceroute_checkbox.setText("Traceroute");
+        traceroute_checkbox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                traceroute_checkboxActionPerformed(evt);
+            }
+        });
+
+        same_server_domain_checkbox.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        same_server_domain_checkbox.setText("SameServerDomain");
+        same_server_domain_checkbox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                same_server_domain_checkboxActionPerformed(evt);
+            }
+        });
+
+        absolute_path_checkbox.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        absolute_path_checkbox.setLabel("Absolute Path");
+        absolute_path_checkbox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                absolute_path_checkboxActionPerformed(evt);
+            }
+        });
+
+        bing_key_textfield.setText("Bing Search API Key");
+
+        javax.swing.GroupLayout checkboxes_panelLayout = new javax.swing.GroupLayout(checkboxes_panel);
+        checkboxes_panel.setLayout(checkboxes_panelLayout);
+        checkboxes_panelLayout.setHorizontalGroup(
+            checkboxes_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(checkboxes_panelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(checkboxes_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(checkboxes_panelLayout.createSequentialGroup()
+                        .addGroup(checkboxes_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(checkboxes_panelLayout.createSequentialGroup()
+                                .addComponent(whois_checkbox, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(10, 10, 10)
+                                .addComponent(dns_checkbox, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(checkboxes_panelLayout.createSequentialGroup()
+                                .addComponent(http_methods_checkbox, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(structure_checkbox, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(18, 18, 18)
+                        .addGroup(checkboxes_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(checkboxes_panelLayout.createSequentialGroup()
+                                .addComponent(ip_port_checkbox, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(os_checkbox, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(checkboxes_panelLayout.createSequentialGroup()
+                                .addComponent(traceroute_checkbox, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(absolute_path_checkbox, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(checkboxes_panelLayout.createSequentialGroup()
+                        .addComponent(same_server_domain_checkbox, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(27, 27, 27)
+                        .addComponent(bing_key_textfield, javax.swing.GroupLayout.PREFERRED_SIZE, 306, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        checkboxes_panelLayout.setVerticalGroup(
+            checkboxes_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(checkboxes_panelLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(checkboxes_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(whois_checkbox)
+                    .addComponent(dns_checkbox)
+                    .addComponent(ip_port_checkbox)
+                    .addComponent(os_checkbox))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(checkboxes_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(http_methods_checkbox)
+                    .addComponent(structure_checkbox)
+                    .addComponent(traceroute_checkbox)
+                    .addComponent(absolute_path_checkbox))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(checkboxes_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(bing_key_textfield, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(same_server_domain_checkbox)))
+        );
+
+        config_file_label.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        config_file_label.setText("Config File Position:");
+
+        config_file_textfield.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        config_file_textfield.setText("./config/config.txt");
+        config_file_textfield.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                config_file_textfieldActionPerformed(evt);
+            }
+        });
+
+        browse_save_file.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        browse_save_file.setText("Browse");
+        browse_save_file.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                browse_save_fileActionPerformed(evt);
+            }
+        });
+
+        webcms_panel.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
+
+        webcms_checkbox.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        webcms_checkbox.setText("Web CMS Identify");
+        webcms_checkbox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                webcms_checkboxActionPerformed(evt);
+            }
+        });
+
+        webcms_label.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        webcms_label.setText("WebCMS Finger Dicts:");
+
+        webcms_finger_position_textfield.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        webcms_finger_position_textfield.setText("./config/sub_domain_dicts/sub_domain.txt");
+
+        webcms_browse_button.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        webcms_browse_button.setText("Browse");
+        webcms_browse_button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                webcms_browse_buttonActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout webcms_panelLayout = new javax.swing.GroupLayout(webcms_panel);
+        webcms_panel.setLayout(webcms_panelLayout);
+        webcms_panelLayout.setHorizontalGroup(
+            webcms_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, webcms_panelLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(webcms_label)
+                .addGap(30, 30, 30)
+                .addComponent(webcms_finger_position_textfield, javax.swing.GroupLayout.PREFERRED_SIZE, 306, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(webcms_browse_button)
+                .addContainerGap())
+            .addGroup(webcms_panelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(webcms_checkbox)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        webcms_panelLayout.setVerticalGroup(
+            webcms_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(webcms_panelLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(webcms_checkbox)
+                .addGap(18, 18, 18)
+                .addGroup(webcms_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(webcms_finger_position_textfield, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(webcms_browse_button)
+                    .addComponent(webcms_label)))
+        );
+
+        target_label.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        target_label.setText("Target URL:");
+
+        target_textfield.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        target_textfield.setText("http://");
+
+        sensitive_file_panel.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
+
+        sensitive_file_checkbox.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        sensitive_file_checkbox.setText("Sensitive Files & Paths");
+        sensitive_file_checkbox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sensitive_file_checkboxActionPerformed(evt);
+            }
+        });
+
+        bake_file_label.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        bake_file_label.setText("Bake_file Dicts:");
+
+        bake_file_textfield.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        bake_file_textfield.setText("./config/sub_domain_dicts/sub_domain.txt");
+
+        bake_file_browse_button.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        bake_file_browse_button.setText("Browse");
+        bake_file_browse_button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bake_file_browse_buttonActionPerformed(evt);
+            }
+        });
+
+        login_dicts_label.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        login_dicts_label.setText("Login  Dicts:");
+
+        login_textfield.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        login_textfield.setText("./config/sub_domain_dicts/sub_domain.txt");
+
+        login_browse_button.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        login_browse_button.setText("Browse");
+        login_browse_button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                login_browse_buttonActionPerformed(evt);
+            }
+        });
+
+        upload_label.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        upload_label.setText("Upload Dicts:");
+
+        upload_textfield.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        upload_textfield.setText("./config/sub_domain_dicts/sub_domain.txt");
+
+        upload_browse_button.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        upload_browse_button.setText("Browse");
+        upload_browse_button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                upload_browse_buttonActionPerformed(evt);
+            }
+        });
+
+        common_label.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        common_label.setText("Common Dicts:");
+
+        common_textfield.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        common_textfield.setText("./config/sub_domain_dicts/sub_domain.txt");
+
+        common_browse_button.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        common_browse_button.setText("Browse");
+        common_browse_button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                common_browse_buttonActionPerformed(evt);
+            }
+        });
+
+        git_svn_label.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        git_svn_label.setText("Git & svn Dicts:");
+
+        git_svn_textfield.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        git_svn_textfield.setText("./config/sub_domain_dicts/sub_domain.txt");
+
+        git_svn_button.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        git_svn_button.setText("Browse");
+        git_svn_button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                git_svn_buttonActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout sensitive_file_panelLayout = new javax.swing.GroupLayout(sensitive_file_panel);
+        sensitive_file_panel.setLayout(sensitive_file_panelLayout);
+        sensitive_file_panelLayout.setHorizontalGroup(
+            sensitive_file_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(sensitive_file_panelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(sensitive_file_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, sensitive_file_panelLayout.createSequentialGroup()
+                        .addComponent(login_dicts_label)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(login_textfield, javax.swing.GroupLayout.PREFERRED_SIZE, 306, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(login_browse_button))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, sensitive_file_panelLayout.createSequentialGroup()
+                        .addComponent(upload_label)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(upload_textfield, javax.swing.GroupLayout.PREFERRED_SIZE, 306, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(upload_browse_button))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, sensitive_file_panelLayout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(bake_file_textfield, javax.swing.GroupLayout.PREFERRED_SIZE, 306, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(bake_file_browse_button))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, sensitive_file_panelLayout.createSequentialGroup()
+                        .addGroup(sensitive_file_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(common_label)
+                            .addComponent(git_svn_label))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(sensitive_file_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, sensitive_file_panelLayout.createSequentialGroup()
+                                .addComponent(git_svn_textfield, javax.swing.GroupLayout.PREFERRED_SIZE, 306, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(git_svn_button))
+                            .addGroup(sensitive_file_panelLayout.createSequentialGroup()
+                                .addComponent(common_textfield, javax.swing.GroupLayout.PREFERRED_SIZE, 306, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(common_browse_button))))
+                    .addGroup(sensitive_file_panelLayout.createSequentialGroup()
+                        .addComponent(sensitive_file_checkbox, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+            .addGroup(sensitive_file_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(sensitive_file_panelLayout.createSequentialGroup()
+                    .addGap(9, 9, 9)
+                    .addComponent(bake_file_label)
+                    .addContainerGap(443, Short.MAX_VALUE)))
+        );
+        sensitive_file_panelLayout.setVerticalGroup(
+            sensitive_file_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(sensitive_file_panelLayout.createSequentialGroup()
+                .addGap(18, 18, 18)
+                .addComponent(sensitive_file_checkbox)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(sensitive_file_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(bake_file_browse_button)
+                    .addComponent(bake_file_textfield, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(sensitive_file_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(login_browse_button)
+                    .addComponent(login_textfield, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(login_dicts_label))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(sensitive_file_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(upload_browse_button)
+                    .addComponent(upload_textfield, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(upload_label))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(sensitive_file_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(common_label)
+                    .addGroup(sensitive_file_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(common_browse_button)
+                        .addComponent(common_textfield, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(sensitive_file_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(git_svn_textfield, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(git_svn_label)
+                    .addComponent(git_svn_button))
+                .addContainerGap(18, Short.MAX_VALUE))
+            .addGroup(sensitive_file_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(sensitive_file_panelLayout.createSequentialGroup()
+                    .addGap(53, 53, 53)
+                    .addComponent(bake_file_label)
+                    .addContainerGap(152, Short.MAX_VALUE)))
+        );
+
+        sub_domain_panel.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
+
+        sub_domain_checkbox.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        sub_domain_checkbox.setText("Sub-Domains");
+        sub_domain_checkbox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sub_domain_checkboxActionPerformed(evt);
+            }
+        });
+
+        sub_domain_label.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        sub_domain_label.setText("Sub-Domain Dicts:");
+
+        sub_domain_textfield.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        sub_domain_textfield.setText("./config/sub_domain_dicts/sub_domain.txt");
+
+        sub_domain_browse_button.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        sub_domain_browse_button.setText("Browse");
+        sub_domain_browse_button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sub_domain_browse_buttonActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout sub_domain_panelLayout = new javax.swing.GroupLayout(sub_domain_panel);
+        sub_domain_panel.setLayout(sub_domain_panelLayout);
+        sub_domain_panelLayout.setHorizontalGroup(
+            sub_domain_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(sub_domain_panelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(sub_domain_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(sub_domain_panelLayout.createSequentialGroup()
+                        .addComponent(sub_domain_checkbox, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, sub_domain_panelLayout.createSequentialGroup()
+                        .addComponent(sub_domain_label)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(sub_domain_textfield, javax.swing.GroupLayout.PREFERRED_SIZE, 306, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(sub_domain_browse_button)))
+                .addContainerGap())
+        );
+        sub_domain_panelLayout.setVerticalGroup(
+            sub_domain_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(sub_domain_panelLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(sub_domain_checkbox)
+                .addGap(5, 5, 5)
+                .addGroup(sub_domain_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(sub_domain_label)
+                    .addComponent(sub_domain_textfield, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(sub_domain_browse_button)))
+        );
+
+        confirm_button.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        confirm_button.setText("Confirm");
+        confirm_button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                confirm_buttonActionPerformed(evt);
+            }
+        });
+
+        result_file_textfield.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        result_file_textfield.setText("./config/config.txt");
+
+        result_save_browse_button.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        result_save_browse_button.setText("Browse");
+        result_save_browse_button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                result_save_browse_buttonActionPerformed(evt);
+            }
+        });
+
+        result_save_label.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        result_save_label.setText("Result Save Position:");
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(checkboxes_panel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(sensitive_file_panel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(sub_domain_panel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(webcms_panel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(result_save_label)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(result_file_textfield, javax.swing.GroupLayout.PREFERRED_SIZE, 306, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(result_save_browse_button))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(config_file_label)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(config_file_textfield, javax.swing.GroupLayout.PREFERRED_SIZE, 306, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(target_label, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                .addComponent(target_textfield, javax.swing.GroupLayout.PREFERRED_SIZE, 306, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(browse_save_file)))
+                                .addGap(14, 14, 14)))
+                        .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(title_label)
+                        .addGap(193, 193, 193))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(confirm_button)
+                .addGap(257, 257, 257))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(13, 13, 13)
+                .addComponent(title_label)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(target_label)
+                    .addComponent(target_textfield, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(result_save_label)
+                    .addComponent(result_file_textfield, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(result_save_browse_button))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(config_file_label)
+                    .addComponent(config_file_textfield, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(browse_save_file))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(checkboxes_panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(sub_domain_panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(sensitive_file_panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(webcms_panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(confirm_button)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        pack();
+    }// </editor-fold>                        
